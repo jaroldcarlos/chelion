@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ app_name }} | {% trans "log in"|title %}</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'backend/plugins/fontawesome-free/css/all.min.css' %}">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="{% static 'backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{% static 'backend/dist/css/adminlte.min.css' %}">
+    <style>
+        body.login-page {
+            background-image: url('{% static "/images/bg/bg6.jpg" %}');
+        }
+    </style>
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="{% url 'frontend:home' %}"><img src="{% static 'images/logo/logo.png' %}" width="150" alt="{{ app_name }} Logo"></a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+            <p class="login-box-msg">{% trans "sign in to start your session"|capfirst %}</p>
+            <form method="post" id="login-form">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div style="margin-top:15px;">
+                    <input type="checkbox" id="show_password" title="{% trans 'clic para mostrar contraseña' %}"/>
+                    &nbsp;&nbsp;{% trans "show password"|title %}
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        {% comment %}
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">
+                                Remember Me
+                            </label>
+                        </div>
+                        {% endcomment %}
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary btn-sm" style="width:100%">{% trans "sign in"|title %}</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                </form>
+                {% comment %}
+                    <div class="social-auth-links text-center mb-3">
+                        <p>- OR -</p>
+                        <a href="#" class="btn btn-block btn-primary">
+                            <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+                        </a>
+                        <a href="#" class="btn btn-block btn-danger">
+                            <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+                        </a>
+                    </div>
+                <!-- /.social-auth-links -->
+                <p class="mb-1">
+                    <a href="{% url 'password_reset' %}">{% trans "i forgot my password"|capfirst %}</a>
+                </p>
+                <p class="mb-0">
+                    <a href="{% url 'register' %}" class="text-center">{% trans "register a new membership"|capfirst %}</a>
+                </p>
+                {% endcomment %}
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    <script src="{% static 'backend/plugins/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'backend/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'backend/dist/js/adminlte.min.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+            $('#show_password').click(function () {
+                if ($('#show_password').is(':checked')) {
+                    $('#id_password').attr('type', 'text');
+                } else {
+                    $('#id_password').attr('type', 'password');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

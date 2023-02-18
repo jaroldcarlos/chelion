@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    {% load static %}
+    {% load i18n %}
+    {% load crispy_forms_tags %}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ app_name }} | {% trans "register"|title %}</title>
+
+        <!-- Google Font: Source Sans Pro -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{% static 'backend/plugins/fontawesome-free/css/all.min.css' %}">
+        <!-- icheck bootstrap -->
+        <link rel="stylesheet" href="{% static 'backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="{% static 'backend/dist/css/adminlte.min.css' %}">
+    </head>
+    <body class="hold-transition register-page">
+        <div class="register-box">
+            <div class="register-logo">
+                <a href="{% url 'frontend:home' %}"><img src="{% static 'images/logo/logo.svg' %}" alt="{{ app_name }} Logo"></a>
+            </div>
+            <!-- /.login-logo -->
+            <div class="card">
+                <div class="card-body login-card-body">
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert {{ message.tags }} alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <h5><i class="icon fas fa-info"></i>{% trans "information"|title %}</h5>
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                  <p class="login-box-msg">{% trans "register a new membership"|capfirst %}</p>
+                  <form method="POST" id="register_form" accept-charset="utf-8">
+                    {% csrf_token %}
+                    {{ register_form|crispy }}
+                    <div class="row">
+                        <div class="col-8">
+                            {% comment %}
+                            <div class="icheck-primary">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">
+                                    Remember Me
+                                </label>
+                            </div>
+                            {% endcomment %}
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-12">
+                            <button class="g-recaptcha btn btn-primary btn-sm" data-sitekey="{{ site_key }}" data-callback='onSubmit' style="width:100%">{% trans "Send" %}</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    </form>
+                    {% comment %}
+                        <div class="social-auth-links text-center mb-3">
+                            <p>- OR -</p>
+                            <a href="#" class="btn btn-block btn-primary">
+                                <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+                            </a>
+                            <a href="#" class="btn btn-block btn-danger">
+                                <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+                            </a>
+                        </div>
+                    <!-- /.social-auth-links -->
+                    {% endcomment %}
+                    <p class="mb-1">
+                        <p class="text-center">{% trans "If you already have an account" %}, <a href="{% url 'login' %}">{% trans "log in" %}</a></p>
+                    </p>
+                </div>
+                <!-- /.login-card-body -->
+            </div>
+        </div>
+        <script src="{% static 'backend/plugins/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'backend/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'backend/dist/js/adminlte.min.js' %}"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script>
+           function onSubmit(token) {
+             document.getElementById("register_form").submit();
+           }
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,59 @@
+{% extends "../layout.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/jquery.dataTables.min.css' %}">
+{% endblock css %}
+
+{% block navigator %}
+    <li class="breadcrumb-item"><a href="{% url 'backend:home' %}">{% trans "home" %}</a></li>
+    <li class="breadcrumb-item">{% trans "users list" %}</li>
+{% endblock navigator %}
+
+{% block content %}
+    <table id="table_id" class="display">
+        <thead>
+            <tr>
+                <th>{% trans "username"|capfirst %}</th>
+                <th>{% trans "first name"|capfirst %}</th>
+                <th>{% trans "last name"|capfirst %}</th>
+                <th>{% trans "email"|capfirst %}</th>
+                <th>{% trans "options"|capfirst %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.first_name }}</td>
+                    <td>{{ user.last_name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>
+                        <a href="{% url 'backend:users_update' user.pk %}" class="btn btn-primary" title="{% trans 'edit' %}"><i class="fas fa-edit"></i></a>
+                        <a href="{% url 'backend:users_delete' user.pk %}" class="btn btn-danger" title="{% trans 'delete' %}"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}
+
+{% block js %}
+    <script src="{% static 'js/jquery.dataTables.min.js' %}"></script>
+    <script>
+        $(document).ready( function () {
+            $('#table_id').DataTable({
+                "language": {
+                    "lengthMenu": "{% trans 'Display _MENU_ records per page' %}",
+                    "zeroRecords": "{% trans 'Nothing found - sorry'|capfirst %}",
+                    "info": "{% trans 'Showing page _PAGE_ of _PAGES_' %}",
+                    "infoEmpty": "{% trans 'no records available'|capfirst %}",
+                    "infoFiltered": "{% trans '(filtered from _MAX_ total records)'|capfirst %}",
+                    "search": "{% trans 'search'|capfirst %}",
+                }
+            });
+        } );
+    </script>
+{% endblock js %}

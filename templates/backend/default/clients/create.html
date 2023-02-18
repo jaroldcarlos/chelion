@@ -1,0 +1,69 @@
+{% extends "../layout.html" %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block navigator %}
+    <li class="breadcrumb-item"><a href="{% url 'backend:home' %}">{% trans "home" %}</a></li>
+    <li class="breadcrumb-item">{% trans "create client" %}</li>
+{% endblock navigator %}
+
+{% block content %}
+    <form method="post">{% csrf_token %}
+        <div class="row">
+            <div class="col-md-6">
+                {{ form.business|as_crispy_field }}
+            </div>
+            <div class="col-md-6">
+                {{ form.agent|as_crispy_field }}
+            </div>
+        </div>
+        <div class="card card-success">
+            <div class="card-header">
+                <h3 class="card-title">{% trans "client registration"|title %}</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        {{ form.name|as_crispy_field }}
+                        {{ form.address|as_crispy_field }}
+                        {{ form.zipcode|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ form.web|as_crispy_field }}
+                        {{ form.cif|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ form.contact_person|as_crispy_field }}
+                        {{ form.email|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ form.person_position|as_crispy_field }}
+                        {{ form.telephone|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="card-title">{% trans "Activity"|title %}:</h3><br><br>
+                        {{ form.a_engineering|as_crispy_field }}
+                        {{ form.a_meter|as_crispy_field }}
+                        {{ form.a_distributor|as_crispy_field }}
+                        {{ form.a_installer|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="card-title">{% trans "Interest"|title %}:</h3><br><br>
+                        {{ form.i_storage|as_crispy_field }}
+                        {{ form.i_investor|as_crispy_field }}
+                        {{ form.i_charger|as_crispy_field }}
+                        {{ form.i_panels|as_crispy_field }}
+                        {{ form.i_others|as_crispy_field }}
+                    </div>
+                    <div class="col-md-12">
+                        {{ form.interest|as_crispy_field }}
+                        {{ form.comment|as_crispy_field }}
+                        <input type="submit" value="{% trans 'save' %}" class="btn btn-success">
+                        <a href="backend:clients_list" class="btn btn-default">{% trans "see list" %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock content %}

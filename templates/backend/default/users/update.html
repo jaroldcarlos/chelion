@@ -1,0 +1,18 @@
+{% extends "backend/layout.html" %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block navigator %}
+    <li class="breadcrumb-item"><a href="{% url 'backend:home' %}">{% trans "home" %}</a></li>
+    <li class="breadcrumb-item">{% trans "update user" %}</li>
+{% endblock navigator %}
+
+{% block content %}
+    <form method="post">{% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" value="{% trans 'save' %}" class="btn btn-success">
+        <a href="{% url 'backend:users_list' %}" class="btn btn-default">{% trans "back to the list" %}</a>
+        <a href="{% url 'backend:users_delete' object.pk %}" class="btn btn-danger" style="float:right">{% trans "delete" %}</a>
+    </form>
+{% endblock content %}

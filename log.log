@@ -1,0 +1,2247 @@
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 5
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2633
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 5
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\views\users.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\views\general.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\views\dashboard.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\views\dashboard.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 5
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2741
+INFO "GET /backend HTTP/1.1" 301 0
+ERROR Internal Server Error: /backend/
+Traceback (most recent call last):
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    resolved_login_url = resolve_url(login_url or settings.LOGIN_URL)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR "GET /backend/ HTTP/1.1" 500 100901
+INFO C:\Proyectos\Django\blank4\src\core\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/ HTTP/1.1" 302 0
+ERROR Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+ERROR "GET /accounts/login/?next=/backend/ HTTP/1.1" 500 90542
+ERROR Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+ERROR "GET /accounts/login/?next=/backend/ HTTP/1.1" 500 90542
+ERROR Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+ERROR "GET /accounts/login/?next=/backend/ HTTP/1.1" 500 90542
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'crispy_forms_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'crispy_forms_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+custom_filters
+custom_tags
+i18n
+l10n
+log
+model_tags
+static
+tz
+ERROR "GET /accounts/login/?next=/backend/ HTTP/1.1" 500 183117
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'register' not found. 'register' is not a valid view function or pattern name.
+ERROR "GET /accounts/login/?next=/backend/ HTTP/1.1" 500 130823
+INFO C:\Proyectos\Django\blank4\src\core\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3661
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO C:\Proyectos\Django\blank4\src\core\components\thirdparty.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 61, in as_crispy_form
+    template = uni_form_template(template_pack)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 22, in uni_form_template
+    return get_template("%s/uni_form.html" % template_pack)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bootstrap5/uni_form.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Schopenhauer\Envs\blank4\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: bootstrap5/uni_form.html
+ERROR "GET /accounts/login/?next=/backend/ HTTP/1.1" 500 147997
+INFO C:\Proyectos\Django\blank4\src\core\components\thirdparty.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3621
+INFO "GET /admin HTTP/1.1" 301 0
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2248
+INFO "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+INFO "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+INFO "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2450
+INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2450
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2449
+INFO Watching for file changes with StatReloader
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO "GET /admin/ HTTP/1.1" 200 4665
+INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10279
+INFO "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+INFO "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO C:\Proyectos\Django\blank4\src\apps\backend\dynamic_preferences_registry.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\dynamic_preferences_registry.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3621
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3621
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3621
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3621
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3621
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3621
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10717
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/5/change/ HTTP/1.1" 200 8146
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+INFO "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+INFO "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO C:\Proyectos\Django\blank4\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /accounts/login/
+ERROR "GET /accounts/login/?next=/backend/ HTTP/1.1" 500 151304
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3635
+INFO C:\Proyectos\Django\blank4\src\core\context_processors.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/5/change/ HTTP/1.1" 200 8146
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "POST /admin/dynamic_preferences/globalpreferencemodel/5/change/ HTTP/1.1" 302 0
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10983
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3631
+INFO "GET / HTTP/1.1" 200 5
+INFO "GET / HTTP/1.1" 200 5
+INFO C:\Proyectos\Django\blank4\src\apps\backend\dynamic_preferences_registry.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\dynamic_preferences_registry.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\dynamic_preferences_registry.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\dynamic_preferences_registry.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\frontend\views\web.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 5050
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10715
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO C:\Proyectos\Django\blank4\src\apps\backend\dynamic_preferences_registry.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10715
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/5/change/ HTTP/1.1" 200 8144
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10715
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10715
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10715
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10715
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 10715
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO C:\Proyectos\Django\blank4\src\apps\backend\dynamic_preferences_registry.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 11171
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/6/change/ HTTP/1.1" 200 8192
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/6/change/ HTTP/1.1" 200 8192
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/6/change/ HTTP/1.1" 200 8192
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO C:\Proyectos\Django\blank4\src\apps\backend\views\users.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\views\users.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\blank4\src\apps\backend\views\dashboard.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /backendç
+WARNING "GET /backend%C3%A7 HTTP/1.1" 404 2974
+INFO "GET /backend/ HTTP/1.1" 200 5459
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 5
+INFO "GET /backend/ HTTP/1.1" 200 5459
+ERROR Internal Server Error: /backend/users/change-password
+ERROR "GET /backend/users/change-password HTTP/1.1" 500 138729
+ERROR Internal Server Error: /backend/users/create
+ERROR "GET /backend/users/create HTTP/1.1" 500 135190
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/users/create HTTP/1.1" 200 7289
+INFO "GET /backend/users/list HTTP/1.1" 200 6451
+WARNING "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 404 1947
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+WARNING "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 404 1947
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /backend/users/list HTTP/1.1" 200 6451
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /backend/ HTTP/1.1" 200 5459
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /backend/ HTTP/1.1" 200 5459
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 5
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3631
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 200 3853
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5459
+INFO "GET /backend/users/create HTTP/1.1" 200 7289
+INFO "GET /backend/users/list HTTP/1.1" 200 6451
+INFO "GET /backend/users/create HTTP/1.1" 200 7289
+INFO "GET /backend/ HTTP/1.1" 200 5459
+INFO "GET /backend/ HTTP/1.1" 200 5459
+INFO "GET /backend/ HTTP/1.1" 200 5459
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3631
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 5
+INFO "GET /backend/ HTTP/1.1" 200 5459
+INFO "GET /admin/ HTTP/1.1" 200 4994
+INFO "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+INFO "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+INFO "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 11143
+INFO "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+INFO "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/5/change/ HTTP/1.1" 200 8116
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+INFO "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+INFO "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO "POST /admin/dynamic_preferences/globalpreferencemodel/5/change/ HTTP/1.1" 302 0
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 11413
+INFO "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 7640
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/5/change/ HTTP/1.1" 200 8118
+INFO "GET /admin/dynamic_preferences/globalpreferencemodel/ HTTP/1.1" 200 11145
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3635
+ERROR Internal Server Error: /register/
+ERROR "GET /register/ HTTP/1.1" 500 80622
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3635
+ERROR Internal Server Error: /accounts/password_reset/
+ERROR "GET /accounts/password_reset/ HTTP/1.1" 500 135870
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3635
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\core\components\i18n.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3623
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5460
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/logout HTTP/1.1" 301 0
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 200 5
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\views\web.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\views\web.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\views\web.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\views\web.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5460
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\frontend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/ HTTP/1.1" 200 5460
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\client.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/ HTTP/1.1" 200 6001
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /backend/ HTTP/1.1" 200 5891
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /backend/ HTTP/1.1" 200 5901
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+ERROR Internal Server Error: /backend/clients/create
+ERROR "GET /backend/clients/create HTTP/1.1" 500 87830
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\client.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/clients/create HTTP/1.1" 200 12712
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 12856
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+ERROR Internal Server Error: /backend/clients/create
+ERROR "GET /backend/clients/create HTTP/1.1" 500 169651
+INFO "GET /backend/clients/create HTTP/1.1" 200 7019
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /backend/clients/create HTTP/1.1" 200 7753
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /backend/clients/create HTTP/1.1" 200 7787
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /backend/clients/create HTTP/1.1" 200 7787
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 311239
+INFO "GET /backend/clients/create HTTP/1.1" 200 9611
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 8027
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 7989
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 7989
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 7989
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 7989
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 13297
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 13358
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 13358
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 13387
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 13358
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 13421
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 13479
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 15943
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 15972
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 19622
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 19680
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 20999
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21077
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21077
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21111
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21118
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21094
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21102
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21102
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+ERROR Internal Server Error: /backend/clients/create
+ERROR "POST /backend/clients/create HTTP/1.1" 500 203335
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /backend/clients/create
+ERROR "POST /backend/clients/create HTTP/1.1" 500 127250
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\client.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /backend/clients/create HTTP/1.1" 302 0
+INFO "GET /backend/clients/list HTTP/1.1" 200 6871
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /backend/clients/list HTTP/1.1" 200 6871
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 7942
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+ERROR Internal Server Error: /backend/clients/delete/1
+ERROR "GET /backend/clients/delete/1 HTTP/1.1" 500 170030
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/clients/delete/1 HTTP/1.1" 200 6206
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "POST /backend/clients/delete/1 HTTP/1.1" 302 0
+INFO "GET /backend/clients/list HTTP/1.1" 200 7402
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+ERROR Internal Server Error: /backend/clients/update/1
+ERROR "GET /backend/clients/update/1 HTTP/1.1" 500 109619
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 7402
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+ERROR Internal Server Error: /backend/clients/update/1
+ERROR "GET /backend/clients/update/1 HTTP/1.1" 500 109619
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 7402
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+ERROR Internal Server Error: /backend/clients/delete/1
+ERROR "GET /backend/clients/delete/1 HTTP/1.1" 500 109871
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 7402
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+ERROR Internal Server Error: /backend/clients/update/1
+ERROR "GET /backend/clients/update/1 HTTP/1.1" 500 109619
+INFO "GET /admin HTTP/1.1" 301 0
+INFO "GET /admin/ HTTP/1.1" 200 5314
+INFO "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 5969
+INFO "GET /admin/backend/client/ HTTP/1.1" 200 7395
+INFO "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO "GET /admin/backend/client/2/change/ HTTP/1.1" 200 17194
+INFO "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /backend/clients/list HTTP/1.1" 200 7402
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO "GET /backend/clients/list HTTP/1.1" 200 7402
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 7402
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 7403
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+ERROR Internal Server Error: /backend/clients/update/2
+ERROR "GET /backend/clients/update/2 HTTP/1.1" 500 138436
+INFO "GET /backend/clients/update/2 HTTP/1.1" 200 21370
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/delete/2 HTTP/1.1" 200 6208
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "POST /backend/clients/delete/2 HTTP/1.1" 302 0
+INFO "GET /backend/clients/list HTTP/1.1" 200 6863
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21091
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3343
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+WARNING Forbidden (Origin checking failed - https://3f90-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://f335-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+WARNING Forbidden (Origin checking failed - https://f335-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Forbidden (Origin checking failed - https://f335-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+WARNING Forbidden (Origin checking failed - https://f335-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /backend/users/create HTTP/1.1" 200 7674
+INFO "GET /backend/clients/create HTTP/1.1" 200 21091
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5884
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/clients/list HTTP/1.1" 200 6953
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/clients/create HTTP/1.1" 200 21181
+INFO "GET /backend/clients/list HTTP/1.1" 200 6953
+INFO "GET /backend/clients/create HTTP/1.1" 200 21181
+INFO "GET /backend/clients/list HTTP/1.1" 200 6953
+INFO "GET /backend/clients/list HTTP/1.1" 200 6953
+INFO "GET /backend/clients/list HTTP/1.1" 200 6953
+INFO "GET /backend/clients/list HTTP/1.1" 200 6953
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/clients/list HTTP/1.1" 200 6953
+INFO "GET /backend/clients/create HTTP/1.1" 200 21063
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/clients/create HTTP/1.1" 200 21174
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/users/list HTTP/1.1" 200 6961
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "POST /backend/clients/create HTTP/1.1" 302 0
+INFO "GET /backend/clients/list HTTP/1.1" 200 7470
+INFO "GET /backend/clients/list HTTP/1.1" 200 7470
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/users/create HTTP/1.1" 200 7764
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 7470
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 7470
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "POST /backend/clients/create HTTP/1.1" 302 0
+INFO "GET /backend/clients/list HTTP/1.1" 200 7996
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/clients/list HTTP/1.1" 200 7996
+INFO "GET /backend/clients/list HTTP/1.1" 200 8199
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/users/list HTTP/1.1" 200 6961
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/clients/list HTTP/1.1" 200 8207
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5974
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/clients/create HTTP/1.1" 200 20481
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/clients/create HTTP/1.1" 200 21071
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/clients/create HTTP/1.1" 200 21080
+INFO "GET /backend/clients/create HTTP/1.1" 200 21109
+INFO "GET /backend/clients/create HTTP/1.1" 200 21109
+INFO "GET /backend/clients/create HTTP/1.1" 200 21109
+INFO "GET /backend/clients/create HTTP/1.1" 200 21109
+INFO "GET /backend/clients/create HTTP/1.1" 200 21109
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5943
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/clients/create HTTP/1.1" 200 21109
+INFO "GET /backend/ HTTP/1.1" 200 5943
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 5943
+INFO "GET /backend/ HTTP/1.1" 200 5943
+INFO "GET /backend/clients/create HTTP/1.1" 200 21021
+INFO "GET /backend/clients/create HTTP/1.1" 200 21021
+INFO "GET /backend/clients/create HTTP/1.1" 200 21025
+INFO "GET /backend/clients/create HTTP/1.1" 200 21029
+INFO "GET /backend/clients/list HTTP/1.1" 200 8176
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/ HTTP/1.1" 200 5943
+INFO "GET /backend/clients/create HTTP/1.1" 200 21037
+INFO "GET /backend/clients/create HTTP/1.1" 200 21037
+INFO "GET /backend/clients/create HTTP/1.1" 200 21037
+INFO "GET /backend/clients/list HTTP/1.1" 200 8176
+INFO "GET /backend/clients/create HTTP/1.1" 200 21037
+INFO "GET /backend/ HTTP/1.1" 200 5943
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21037
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 8176
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+ERROR Internal Server Error: /backend/clients/update/1
+ERROR "GET /backend/clients/update/1 HTTP/1.1" 500 181807
+INFO "GET /backend/ HTTP/1.1" 200 5943
+INFO "GET /backend/clients/update/1 HTTP/1.1" 200 21162
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 8176
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 5943
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21037
+INFO "GET /backend/ HTTP/1.1" 200 5943
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/users/list HTTP/1.1" 200 6930
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 8176
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21037
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21037
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21177
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21202
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21202
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21177
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 8176
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21177
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 6845
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO - Broken pipe from ('127.0.0.1', 58004)
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 6845
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 6845
+INFO - Broken pipe from ('127.0.0.1', 58069)
+INFO - Broken pipe from ('127.0.0.1', 57995)
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO - Broken pipe from ('127.0.0.1', 58106)
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO - Broken pipe from ('127.0.0.1', 58076)
+INFO "GET /backend/ HTTP/1.1" 200 6838
+INFO - Broken pipe from ('127.0.0.1', 58157)
+INFO "GET /backend/ HTTP/1.1" 200 6838
+INFO - Broken pipe from ('127.0.0.1', 58154)
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO - Broken pipe from ('127.0.0.1', 58125)
+INFO - Broken pipe from ('127.0.0.1', 58122)
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO - Broken pipe from ('127.0.0.1', 58179)
+INFO - Broken pipe from ('127.0.0.1', 58166)
+INFO "GET /backend/ HTTP/1.1" 200 6838
+INFO - Broken pipe from ('127.0.0.1', 58114)
+INFO - Broken pipe from ('127.0.0.1', 58231)
+INFO "GET /backend/ HTTP/1.1" 200 6838
+INFO "GET /backend/ HTTP/1.1" 200 6838
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO - Broken pipe from ('127.0.0.1', 58239)
+INFO - Broken pipe from ('127.0.0.1', 58217)
+INFO - Broken pipe from ('127.0.0.1', 58215)
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO - Broken pipe from ('127.0.0.1', 58261)
+INFO "GET /backend/ HTTP/1.1" 200 6838
+INFO "GET /backend/ HTTP/1.1" 200 6838
+INFO - Broken pipe from ('127.0.0.1', 58264)
+INFO - Broken pipe from ('127.0.0.1', 58267)
+INFO - Broken pipe from ('127.0.0.1', 58250)
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://85f3-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 6838
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/users/create HTTP/1.1" 200 7733
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/ HTTP/1.1" 200 7631
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 7628
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 7627
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 7627
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 7627
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 7627
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /backend/clients/list HTTP/1.1" 200 8176
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/ HTTP/1.1" 200 7627
+INFO "GET /backend/ HTTP/1.1" 200 8186
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 8190
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/ HTTP/1.1" 200 9451
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 9445
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 8176
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "POST /backend/clients/create HTTP/1.1" 302 0
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/update/3 HTTP/1.1" 200 21239
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/update/3 HTTP/1.1" 200 21239
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/users/create HTTP/1.1" 200 7733
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /backend/clients/update/3 HTTP/1.1" 200 21379
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/update/2 HTTP/1.1" 200 21399
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://7e28-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO - Broken pipe from ('127.0.0.1', 49595)
+INFO - Broken pipe from ('127.0.0.1', 49584)
+INFO - Broken pipe from ('127.0.0.1', 49581)
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://44b0-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/clients/list HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/clients/list HTTP/1.1" 200 3341
+INFO "GET /backend/clients/list HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/clients/list HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "POST /accounts/login/?next=/backend/clients/list HTTP/1.1" 302 0
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://0a00-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 200 3530
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO Watching for file changes with StatReloader
+INFO "GET /admin HTTP/1.1" 301 0
+INFO "GET /admin/ HTTP/1.1" 200 5969
+INFO "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://5f1b-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://dd9c-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3341
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3353
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 304 0
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3353
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3353
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3353
+WARNING Not Found: /accounts/login/s
+WARNING "GET /accounts/login/s HTTP/1.1" 404 4457
+WARNING Not Found: /accounts/login/st
+WARNING "GET /accounts/login/st HTTP/1.1" 404 4460
+WARNING Not Found: /accounts/login/sta
+WARNING "GET /accounts/login/sta HTTP/1.1" 404 4463
+WARNING Not Found: /accounts/login/stat
+WARNING "GET /accounts/login/stat HTTP/1.1" 404 4466
+WARNING Not Found: /accounts/login/stati
+WARNING "GET /accounts/login/stati HTTP/1.1" 404 4469
+WARNING Not Found: /accounts/login/static
+WARNING "GET /accounts/login/static HTTP/1.1" 404 4472
+WARNING Not Found: /accounts/login/static/
+WARNING "GET /accounts/login/static/ HTTP/1.1" 404 4475
+WARNING Not Found: /accounts/login/static/b
+WARNING "GET /accounts/login/static/b HTTP/1.1" 404 4478
+WARNING Not Found: /accounts/login/static/i
+WARNING "GET /accounts/login/static/i HTTP/1.1" 404 4478
+WARNING Not Found: /accounts/login/static/im
+WARNING "GET /accounts/login/static/im HTTP/1.1" 404 4481
+WARNING Not Found: /accounts/login/static/ima
+WARNING "GET /accounts/login/static/ima HTTP/1.1" 404 4484
+WARNING Not Found: /accounts/login/static/imag
+WARNING "GET /accounts/login/static/imag HTTP/1.1" 404 4487
+WARNING Not Found: /accounts/login/static/image
+WARNING "GET /accounts/login/static/image HTTP/1.1" 404 4490
+WARNING Not Found: /accounts/login/static/images
+WARNING "GET /accounts/login/static/images HTTP/1.1" 404 4493
+WARNING Not Found: /accounts/login/static/images/
+WARNING "GET /accounts/login/static/images/ HTTP/1.1" 404 4496
+WARNING Not Found: /accounts/login/static/images/i
+WARNING "GET /accounts/login/static/images/i HTTP/1.1" 404 4499
+WARNING Not Found: /accounts/login/static/images/im
+WARNING "GET /accounts/login/static/images/im HTTP/1.1" 404 4502
+WARNING Not Found: /accounts/login/static/images/ima
+WARNING "GET /accounts/login/static/images/ima HTTP/1.1" 404 4505
+WARNING Not Found: /accounts/login/static/images/imag
+WARNING "GET /accounts/login/static/images/imag HTTP/1.1" 404 4508
+WARNING Not Found: /accounts/login/static/images/image
+WARNING "GET /accounts/login/static/images/image HTTP/1.1" 404 4511
+WARNING Not Found: /accounts/login/static/images/images
+WARNING "GET /accounts/login/static/images/images HTTP/1.1" 404 4514
+WARNING Not Found: /accounts/login/static/images/b
+WARNING "GET /accounts/login/static/images/b HTTP/1.1" 404 4499
+WARNING Not Found: /accounts/login/static/images/bg
+WARNING "GET /accounts/login/static/images/bg HTTP/1.1" 404 4502
+WARNING Not Found: /accounts/login/static/images/bg/
+WARNING "GET /accounts/login/static/images/bg/ HTTP/1.1" 404 4505
+WARNING Not Found: /accounts/login/static/images/bg/n
+WARNING "GET /accounts/login/static/images/bg/n HTTP/1.1" 404 4508
+WARNING Not Found: /accounts/login/static/images/bg/ng
+WARNING "GET /accounts/login/static/images/bg/ng HTTP/1.1" 404 4511
+WARNING Not Found: /accounts/login/static/images/bg/ng6
+WARNING "GET /accounts/login/static/images/bg/ng6 HTTP/1.1" 404 4514
+WARNING Not Found: /accounts/login/static/images/bg/ng6.
+WARNING "GET /accounts/login/static/images/bg/ng6. HTTP/1.1" 404 4517
+WARNING Not Found: /accounts/login/static/images/bg/ng6.j
+WARNING "GET /accounts/login/static/images/bg/ng6.j HTTP/1.1" 404 4520
+WARNING Not Found: /accounts/login/static/images/bg/ng6.jp
+WARNING "GET /accounts/login/static/images/bg/ng6.jp HTTP/1.1" 404 4523
+WARNING Not Found: /accounts/login/static/images/bg/ng6.jpg
+WARNING "GET /accounts/login/static/images/bg/ng6.jpg HTTP/1.1" 404 4526
+WARNING Not Found: /accounts/login/static/images/bg/g6.jpg
+WARNING "GET /accounts/login/static/images/bg/g6.jpg HTTP/1.1" 404 4523
+WARNING Not Found: /accounts/login/static/images/bg/bg6.jpg
+WARNING "GET /accounts/login/static/images/bg/bg6.jpg HTTP/1.1" 404 4526
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 304 0
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 54513
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+INFO "GET /static/backend/dist/css/adminlte.min.css.map HTTP/1.1" 200 3846965
+INFO "GET /static/backend/dist/js/adminlte.min.js.map HTTP/1.1" 200 135565
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://cf24-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /static/images/logo/logo.svg HTTP/1.1" 200 10410
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+WARNING Forbidden (Origin checking failed - https://9522-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Forbidden (Origin checking failed - https://9522-91-117-232-228.eu.ngrok.io does not match any trusted origins.): /accounts/login/
+WARNING "POST /accounts/login/?next=/backend/ HTTP/1.1" 403 2587
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2993
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /backend/clients/create HTTP/1.1" 200 21175
+INFO "GET /backend/clients/list HTTP/1.1" 200 8806
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO Watching for file changes with StatReloader
