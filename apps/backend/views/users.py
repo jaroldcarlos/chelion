@@ -10,6 +10,8 @@ from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.forms import PasswordChangeForm
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
+from ..forms import SignupForm
+
 from dynamic_preferences.registries import global_preferences_registry
 
 User=get_user_model()
@@ -28,14 +30,8 @@ class Users_List(ListView):
 
 class Users_Create(CreateView):
     model = User
+    form_class = SignupForm
     template_name = f'backend/{theme_backend}/users/create.html'
-    fields = [
-        "username",
-        "first_name",
-        "last_name",
-        "email",
-        "password"
-    ]
 
     @method_decorator(user_passes_test(lambda u: u.is_superuser))
     def dispatch(self, *args, **kwargs):

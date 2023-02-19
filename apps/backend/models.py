@@ -12,6 +12,7 @@ class Client(models.Model):
     BUSINESS_CHOICES = (
         ("1", "Chelion Iberia"),
         ("2", "Iberian Trade Europe"),
+        ("3", "Ambos"),
     )
     AGENT_CHOICES = (
         ("1", "Mario"),
@@ -35,6 +36,9 @@ class Client(models.Model):
     email = models.EmailField(_('email'))
     telephone = models.CharField(_('telephone'), max_length=20, blank=True, null=True)
 
+    #NEW_USER
+    new_user =  models.BooleanField(_('new client'), default=False, help_text='if check is a new client')
+
     #ACTIVITY
     a_installer =  models.BooleanField(_('installer'), default=False)
     a_distributor = models.BooleanField(_('distributor'), default=False)
@@ -57,3 +61,12 @@ class Client(models.Model):
 
     def __str__(self):
         return f'{self.name}'
+
+
+class FilesPDF(models.Model):
+    name = models.CharField(_('name'), max_length=200)
+    file = models.FileField(_('file'),upload_to ='file/', blank=True, null=True)
+
+    def __str__(self):
+        return f'{self.name}'
+

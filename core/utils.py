@@ -185,7 +185,7 @@ def dec_to_deg(deg, min, sec):
         return -1.0 * dec
 
 
-def list_of_themes(where='Backend'):
+def list_of_themes(where='backend'):
     from django.conf import settings
 
     list_themes = []

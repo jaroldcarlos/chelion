@@ -22,6 +22,7 @@ User=get_user_model()
 global_preferences = global_preferences_registry.manager()
 theme_backend = global_preferences['app__app_theme_backend']
 
+
 class home(TemplateView):
     template_name = f'backend/{theme_backend}/index.html'
 

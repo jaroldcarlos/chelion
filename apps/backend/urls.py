@@ -16,4 +16,6 @@ urlpatterns = [
     path('clients/create', views.Clients_Create.as_view(), name='clients_create'),
     path('clients/update/<pk>', views.Clients_Update.as_view(), name='clients_update'),
     path('clients/delete/<pk>', views.Clients_Delete.as_view(), name='clients_delete'),
+
+    path('file/list', views.FilesPDF_List.as_view(), name='file_list'),
 ]

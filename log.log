@@ -2245,3 +2245,258 @@ INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
 INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
 INFO "GET /backend/ HTTP/1.1" 200 9397
 INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\core\components\base.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\dashboard.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\client.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\users.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\core\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 302 0
+INFO "GET /accounts/login/?next=/backend/ HTTP/1.1" 200 3478
+INFO "GET /static/backend/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 59305
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 200 19298
+INFO "GET /static/backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 12505
+INFO "GET /static/backend/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 83253
+INFO "GET /static/backend/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO "GET /static/backend/dist/js/adminlte.min.js HTTP/1.1" 200 46369
+INFO "GET /static/backend/dist/css/adminlte.min.css HTTP/1.1" 200 1396747
+INFO "GET /static/images/bg/bg6.jpg HTTP/1.1" 200 45297
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2976
+INFO "POST /accounts/login/?next=/backend/ HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13224
+INFO "GET /static/backend/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+INFO C:\Proyectos\Django\Chelion\src\core\utils.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /admin/ HTTP/1.1" 200 5224
+INFO "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 5637
+INFO "GET /admin/backend/user/ HTTP/1.1" 200 8071
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+INFO "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+INFO "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO "GET /admin/backend/user/2/change/ HTTP/1.1" 200 18579
+INFO "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+INFO "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19379
+INFO "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+INFO "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO "GET /admin/backend/user/ HTTP/1.1" 200 8071
+INFO "GET /admin/backend/user/3/change/ HTTP/1.1" 200 18541
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/backend/user/ HTTP/1.1" 200 8071
+INFO "GET /admin/backend/user/1/change/ HTTP/1.1" 200 18611
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/backend/user/ HTTP/1.1" 200 8071
+INFO "GET /admin/backend/user/1/change/ HTTP/1.1" 200 18611
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/backend/user/ HTTP/1.1" 200 8071
+INFO "GET /admin/backend/user/2/change/ HTTP/1.1" 200 18579
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/backend/user/ HTTP/1.1" 200 8071
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/clients/create HTTP/1.1" 200 21211
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\users.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\users.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9397
+INFO "GET /backend/users/create HTTP/1.1" 200 7733
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\users.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\users.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /backend/users/create
+ERROR "GET /backend/users/create HTTP/1.1" 500 113129
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\users.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/users/create HTTP/1.1" 200 7233
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/users/create HTTP/1.1" 200 7495
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/users/create HTTP/1.1" 200 7737
+INFO "POST /backend/users/create HTTP/1.1" 302 0
+INFO "GET /backend/users/list HTTP/1.1" 200 8529
+INFO "GET /static/css/jquery.dataTables.min.css HTTP/1.1" 200 18369
+INFO "GET /static/js/jquery.dataTables.min.js HTTP/1.1" 200 90265
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/users/list HTTP/1.1" 200 8529
+INFO "GET /backend/users/create HTTP/1.1" 200 7733
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/users/create HTTP/1.1" 200 8147
+INFO "POST /backend/users/create HTTP/1.1" 200 8367
+INFO "GET /backend/users/list HTTP/1.1" 200 8529
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 304 0
+ERROR Internal Server Error: /backend/users/update/2
+ERROR "GET /backend/users/update/2 HTTP/1.1" 500 136635
+INFO "GET /backend/users/update/2 HTTP/1.1" 200 7639
+INFO "GET /backend/users/update/2 HTTP/1.1" 200 7639
+INFO "GET /backend/users/list HTTP/1.1" 200 8534
+INFO "GET /backend/users/list HTTP/1.1" 200 8636
+INFO "GET /backend/users/list HTTP/1.1" 200 8636
+INFO "GET /backend/ HTTP/1.1" 200 9504
+INFO "GET /backend/ HTTP/1.1" 200 9504
+INFO "GET /backend/ HTTP/1.1" 200 9504
+INFO "GET /backend/ HTTP/1.1" 200 9504
+INFO "GET /static/images/logo/logo.png HTTP/1.1" 304 0
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/ HTTP/1.1" 200 9504
+INFO "GET /backend/ HTTP/1.1" 200 9504
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\pdf.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\pdf.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\pdf.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\pdf.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\pdf.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\pdf.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/ HTTP/1.1" 200 9504
+INFO "GET /admin/ HTTP/1.1" 200 6071
+INFO "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO "GET /admin/backend/filespdf/ HTTP/1.1" 200 6852
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO "GET /admin/backend/filespdf/add/ HTTP/1.1" 200 7912
+INFO "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+INFO "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/backend/filespdf/add/ HTTP/1.1" 302 0
+INFO "GET /admin/backend/filespdf/add/ HTTP/1.1" 200 8158
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO "POST /admin/backend/filespdf/add/ HTTP/1.1" 302 0
+INFO "GET /admin/backend/filespdf/ HTTP/1.1" 200 8436
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/backend/filespdf/add/ HTTP/1.1" 200 7912
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/backend/filespdf/add/ HTTP/1.1" 302 0
+INFO "GET /admin/backend/filespdf/add/ HTTP/1.1" 200 8153
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/backend/filespdf/add/ HTTP/1.1" 302 0
+INFO "GET /admin/backend/filespdf/add/ HTTP/1.1" 200 8153
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/backend/filespdf/add/ HTTP/1.1" 302 0
+INFO "GET /admin/backend/filespdf/add/ HTTP/1.1" 200 8153
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/backend/filespdf/add/ HTTP/1.1" 302 0
+INFO "GET /admin/backend/filespdf/add/ HTTP/1.1" 200 8154
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/backend/filespdf/add/ HTTP/1.1" 302 0
+INFO "GET /admin/backend/filespdf/ HTTP/1.1" 200 9479
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET / HTTP/1.1" 302 0
+INFO "GET /backend/ HTTP/1.1" 200 9504
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\pdf.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Proyectos\Django\Chelion\src\apps\backend\views\pdf.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /backend/ HTTP/1.1" 200 9513
+INFO "GET /backend/file/list HTTP/1.1" 200 7693
+INFO "GET /backend/file/list HTTP/1.1" 200 7747
+INFO "GET /admin/backend/filespdf/7/change/ HTTP/1.1" 200 8167
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/backend/filespdf/7/change/ HTTP/1.1" 302 0
+INFO "GET /admin/backend/filespdf/ HTTP/1.1" 200 9481
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /backend/file/list HTTP/1.1" 200 7990
+INFO "GET /backend/file/list HTTP/1.1" 200 7991
+INFO "GET /backend/file/list HTTP/1.1" 200 8001
+INFO "GET /backend/file/list HTTP/1.1" 200 8373
+INFO "GET /backend/file/list HTTP/1.1" 200 8349
+INFO "GET /backend/ HTTP/1.1" 200 9513
+INFO "GET /backend/file/list HTTP/1.1" 200 8349
+INFO "GET /backend/clients/create HTTP/1.1" 200 21327
+INFO C:\Proyectos\Django\Chelion\src\core\components\logging.py changed, reloading.
