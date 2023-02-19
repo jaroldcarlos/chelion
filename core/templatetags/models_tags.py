@@ -73,7 +73,9 @@ def statistics():
 @register.inclusion_tag('templatetags/map.html')
 def map():
     provinces = Province.objects.all().annotate(num_clients = Count('clients')).order_by('-num_clients').exclude(num_clients__lte=0)
+    clients = Client.objects.all().count()
     context = {
+        'clients_total': clients,
         'provinces':provinces,
         'title': _('map of clients by provinces'),
     }

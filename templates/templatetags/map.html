@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <!-- Map -->
 <div class="card card-success">
@@ -8,6 +9,48 @@
     </div>
     <div class="card-body">
         <div id="map" style="height: 500px;"></div>
+        <hr>
+        <div id="accordion">
+            <div class="panel card card-default">
+                <div class="card-header">
+                    <h4 class="card-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+                            {% trans "information"|title %}
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:40%">{% trans "name"|title %}</th>
+                                    <th style="width:20%">{% trans "Nº Clients" %}</th>
+                                    <th style="width:40%">{% trans "%" %}</th>
+                                </tr>
+                                {% for province in provinces %}
+                                    <tr>
+                                        <td>{{ province.name }}</td>
+                                        <td>
+                                            {{ province.num_clients }}
+                                        </td>
+                                        <td>
+                                            <div class="progress xs">
+                                                {% widthratio province.num_clients clients_total 100 as porcentage%}
+                                                <div class="progress-bar progress-bar-red" style="width: {{ porcentage }}%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span>{{ porcentage }}</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
