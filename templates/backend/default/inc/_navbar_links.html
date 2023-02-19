@@ -6,8 +6,11 @@
             <i class="far fa-user"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-            <a href="#" class="dropdown-item dropdown-footer">{% trans "edit profile"|title %}</a>
+            <a class="dropdown-item dropdown-footer">{% trans "hi"|title %}, {{ request.user.get_name }}</a>
             <a href="{% url 'backend:users_change_password' %}" class="dropdown-item dropdown-footer">{% trans "change password"|title %}</a>
+            {% comment %}
+                <a class="dropdown-item dropdown-footer">{% trans "edit profile"|title %}</a>
+            {% endcomment %}
             <a href="{% url 'logout' %}" class="dropdown-item dropdown-footer">{% trans "Log out"|title %}</a>
         </div>
     </li>

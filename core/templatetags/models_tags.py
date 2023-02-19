@@ -53,7 +53,7 @@ def bart_clients():
     data.append(['Old Client', old_clients ])
     context = {
         'id': 'bart_clients',
-        'title': _('data by clients'),
+        'title': _('data clients'),
         'data':data
     }
     return context

@@ -29,7 +29,7 @@
         {% if forloop.first %}
             L.marker([{{ province.geoposition }}], {icon: myIcon})
                 .addTo(map)
-                .bindPopup('{{ province.name }}: {{ province.num_clients }} Registered clients| Have more clients')
+                .bindPopup('{{ province.name }}: {{ province.num_clients }} Registered clients | Has the most clients')
                 .openPopup();
         {% else %}
             L.marker([{{ province.geoposition }}])

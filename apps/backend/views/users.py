@@ -23,7 +23,7 @@ class Users_List(ListView):
     template_name = f'backend/{theme_backend}/users/list.html'
     context_object_name = 'users'
 
-    @method_decorator(user_passes_test(lambda u: u.is_superuser))
+    @method_decorator(user_passes_test(lambda u: u.is_staff))
     def dispatch(self, *args, **kwargs):
         return super().dispatch(*args, **kwargs)
 
@@ -33,7 +33,7 @@ class Users_Create(CreateView):
     form_class = SignupForm
     template_name = f'backend/{theme_backend}/users/create.html'
 
-    @method_decorator(user_passes_test(lambda u: u.is_superuser))
+    @method_decorator(user_passes_test(lambda u: u.is_staff))
     def dispatch(self, *args, **kwargs):
         return super().dispatch(*args, **kwargs)
 
@@ -46,7 +46,7 @@ class Users_Delete(DeleteView):
     template_name=f'backend/{theme_backend}/users/delete.html'
     success_url=reverse_lazy("backend:users_list")
 
-    @method_decorator(user_passes_test(lambda u: u.is_superuser))
+    @method_decorator(user_passes_test(lambda u: u.is_staff))
     def dispatch(self, *args, **kwargs):
         return super().dispatch(*args, **kwargs)
 
@@ -60,7 +60,7 @@ class Users_Update(UpdateView):
         "email",
     ]
 
-    @method_decorator(user_passes_test(lambda u: u.is_superuser))
+    @method_decorator(user_passes_test(lambda u: u.is_staff))
     def dispatch(self, *args, **kwargs):
         return super().dispatch(*args, **kwargs)
 
@@ -74,7 +74,7 @@ def change_password(request):
             user = form.save()
             update_session_auth_hash(request, user)
             messages.success(request, _('Your password was successfully updated!'))
-            return redirect('change_password')
+            return redirect('backend:users_change_password')
         else:
             messages.error(request, _('Please correct the error below.'))
     else:

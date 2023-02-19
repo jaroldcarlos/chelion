@@ -33,7 +33,7 @@
                     <td>{{ user.last_name }}</td>
                     <td>{{ user.email }}</td>
                     <td>
-                        <a href="{% url 'backend:users_update' user.pk %}" class="btn btn-primary" title="{% trans 'edit' %}"><i class="fas fa-edit"></i></a>
+                        <a href="{% url 'backend:users_update' user.pk %}" class="btn btn-default" title="{% trans 'edit' %}"><i class="fas fa-edit"></i></a>
                         <a href="{% url 'backend:users_delete' user.pk %}" class="btn btn-danger" title="{% trans 'delete' %}"><i class="fas fa-trash"></i></a>
                     </td>
                 </tr>

@@ -25,7 +25,9 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="{% url 'frontend:home' %}"><img src="{% static 'images/logo/logo.png' %}" width="150" alt="{{ app_name }} Logo"></a>
+            {% comment %}
+                <a href="{% url 'frontend:home' %}"><img src="{% static 'images/logo/logo.png' %}" width="150" alt="{{ app_name }} Logo"></a>
+            {% endcomment %}
         </div>
         <!-- /.login-logo -->
         <div class="card">

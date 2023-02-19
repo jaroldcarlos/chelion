@@ -75,7 +75,9 @@
                         {{ form.comment|as_crispy_field }}
                         <input type="submit" value="{% trans 'save' %}" class="btn btn-success">
                         <a href="{% url 'backend:clients_list' %}" class="btn btn-default">{% trans "back to the list" %}</a>
-                        <a href="{% url 'backend:clients_delete' object.pk %}" class="btn btn-danger" style="float:right">{% trans "delete" %}</a>
+                        {% if request.user.is_staff or request.user.is_superuser %}
+                            <a href="{% url 'backend:clients_delete' object.pk %}" class="btn btn-danger" style="float:right">{% trans "delete" %}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

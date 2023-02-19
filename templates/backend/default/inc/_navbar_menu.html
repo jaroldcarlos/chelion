@@ -6,13 +6,15 @@
         <li class="nav-item">
             <a href="{% url 'backend:home' %}" class="nav-link">{% trans "dashboard"|title %}</a>
         </li>
-        <li class="nav-item dropdown">
-            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">{% trans "users"|title %}</a>
-            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow" style="left: 0px; right: inherit;">
-                <li><a href="{% url 'backend:users_create' %}" class="dropdown-item">{% trans "create user"|capfirst %}</a></li>
-                <li><a href="{% url 'backend:users_list' %}" class="dropdown-item">{% trans "user list"|capfirst %}</a></li>
-            </ul>
-        </li>
+        {% if request.user.is_staff or request.user.is_superuser %}
+            <li class="nav-item dropdown">
+                <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">{% trans "users"|title %}</a>
+                <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow" style="left: 0px; right: inherit;">
+                    <li><a href="{% url 'backend:users_create' %}" class="dropdown-item">{% trans "create user"|capfirst %}</a></li>
+                    <li><a href="{% url 'backend:users_list' %}" class="dropdown-item">{% trans "user list"|capfirst %}</a></li>
+                </ul>
+            </li>
+        {% endif %}
         <li class="nav-item dropdown">
             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">{% trans "clients"|title %}</a>
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow" style="left: 0px; right: inherit;">

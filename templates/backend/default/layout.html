@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="{% static 'backend/plugins/fontawesome-free/css/all.min.css' %}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{% static 'backend/dist/css/adminlte.min.css' %}">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4/bootstrap-4.css" rel="stylesheet">
     {% block css %}{% endblock css %}
     <script src="{% static 'backend/plugins/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'backend/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'backend/dist/js/adminlte.min.js' %}"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     {% block js_head %}
     {% endblock js_head %}
 </head>
@@ -80,6 +82,18 @@
         <!-- Main Footer -->
         {% include './inc/_footer.html' %}
     </div>
+    <script>
+    {% if messages %}
+        {% for message in messages %}
+            Swal.fire({
+                title: '{% trans "message"|title %}',
+                text: '{{ message }}',
+                icon: '{{ message.tags }}',
+                confirmButtonText: '{% trans "vale"|title %}'
+            })
+        {% endfor %}
+    {% endif %}
+    </script>
     {% block js %}{% endblock js %}
 </body>
 </html>

@@ -1,6 +1,7 @@
 from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views.generic import ListView, CreateView, DeleteView, UpdateView
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.utils.translation import gettext as _
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib import messages
@@ -18,7 +19,13 @@ class Clients_List(ListView):
     template_name = f'backend/{theme_backend}/clients/list.html'
     context_object_name = 'clients'
 
-    @method_decorator(user_passes_test(lambda u: u.is_superuser))
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        if not self.request.user.is_staff and not self.request.user.is_superuser:
+            queryset = queryset.filter(agent=self.request.user)
+        return queryset
+
+    @method_decorator(user_passes_test(lambda u: u.is_authenticated))
     def dispatch(self, *args, **kwargs):
         return super().dispatch(*args, **kwargs)
 
@@ -28,7 +35,18 @@ class Clients_Create(CreateView):
     template_name = f'backend/{theme_backend}/clients/create.html'
     fields = '__all__'
 
-    @method_decorator(user_passes_test(lambda u: u.is_superuser))
+    def get_initial(self):
+        initial = super(Clients_Create, self).get_initial()
+        if not self.request.user.is_staff and not self.request.user.is_superuser:
+            initial['agent'] = self.request.user
+        return initial
+
+    def form_valid(self, form):
+        name_business = form.cleaned_data['name']
+        messages.success(self.request, f'you have successfully created the client: {name_business}')
+        return super().form_valid(form)
+
+    @method_decorator(user_passes_test(lambda u: u.is_authenticated))
     def dispatch(self, *args, **kwargs):
         return super().dispatch(*args, **kwargs)
 
@@ -50,9 +68,17 @@ class Clients_Update(UpdateView):
     template_name = f'backend/{theme_backend}/clients/update.html'
     fields = '__all__'
 
-    @method_decorator(user_passes_test(lambda u: u.is_superuser))
-    def dispatch(self, *args, **kwargs):
-        return super().dispatch(*args, **kwargs)
+    def test_func(self):
+        if not self.request.user.is_staff and not self.request.user.is_superuser:
+            obj = self.get_object()
+            return obj.agent == self.request.user
+        else:
+            return True
+
+    def form_valid(self, form):
+        name_business = form.cleaned_data['name']
+        messages.success(self.request, f'you have successfully updated the client: {name_business}')
+        return super().form_valid(form)
 
     def get_success_url(self):
         return reverse('backend:clients_list')
