@@ -18,7 +18,7 @@ class ClientForm(forms.ModelForm):
 class SignupForm(forms.ModelForm):
     class Meta:
         model = User
-        fields = ['username', 'first_name','last_name', 'email', 'password', 'is_staff']
+        fields = ['is_staff', 'username', 'first_name','last_name', 'email', 'password']
 
 
     def save(self, commit=True):

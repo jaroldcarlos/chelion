@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 
 {% block navigator %}
-    <li class="breadcrumb-item"><a href="{% url 'backend:home' %}">{% trans "home" %}</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'backend:home' %}">{% trans "dashboard" %}</a></li>
     <li class="breadcrumb-item">{% trans "update user" %}</li>
 {% endblock navigator %}
 
@@ -25,13 +25,22 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">
+                        {{ form.new_user|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
                         {{ form.name|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ form.cif|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
                         {{ form.address|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
                         {{ form.zipcode|as_crispy_field }}
                     </div>
                     <div class="col-md-6">
                         {{ form.web|as_crispy_field }}
-                        {{ form.cif|as_crispy_field }}
                     </div>
                     <div class="col-md-6">
                         {{ form.contact_person|as_crispy_field }}

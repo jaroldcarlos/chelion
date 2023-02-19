@@ -3,10 +3,28 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import AbstractUser
 
 
+
+
 class User(AbstractUser):
     image = models.ImageField(_('image'), blank=True, null=True)
     validated_email = models.BooleanField(_('validated email'), default=False)
 
+    def get_name(self):
+        if self.first_name and self.last_name:
+            return f'{self.first_name} {self.last_name}'
+        else:
+            return f'{ self.username }'
+
+
+def get_agent_choice():
+    list_user = [
+        ("1", "None")
+    ]
+    users = User.objects.filter(is_superuser=False, is_staff=False)
+    if users:
+        for user in users:
+            list_user.append((f'{user.pk}', f'{user.get_name()}'))
+    return list_user
 
 class Client(models.Model):
     BUSINESS_CHOICES = (
@@ -14,6 +32,7 @@ class Client(models.Model):
         ("2", "Iberian Trade Europe"),
         ("3", "Ambos"),
     )
+
     AGENT_CHOICES = (
         ("1", "Mario"),
         ("2", "Pablo"),
@@ -24,8 +43,10 @@ class Client(models.Model):
         ("2", "Yellow"),
         ("3", "Red"),
     )
-    business = models.CharField(_('business'), max_length=1, choices = BUSINESS_CHOICES, default="1")
-    agent = models.CharField(_('agent'), max_length=1, choices = AGENT_CHOICES, default="1")
+    created_on = models.DateTimeField(auto_now_add=True)
+    modified_date = models.DateTimeField(auto_now=True)
+    business = models.CharField(_('business'), max_length=10, choices = BUSINESS_CHOICES, default="1")
+    agent = models.CharField(_('agent'), max_length=10, choices = get_agent_choice(), default="1")
     name = models.CharField(_('company name'), max_length=200)
     address = models.CharField(_('address'), blank=True, null=True, max_length=200)
     zipcode = models.CharField(_('postal code'), blank=True, null=True, max_length=200)

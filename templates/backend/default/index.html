@@ -1,6 +1,12 @@
 {% extends "./layout.html" %}
 
+{% load static %}
+{% load i18n %}
+{% load model_tags %}
+
 {% block content %}
+{% comment %}
+
 <div class="row">
     <div class="col-lg-3 col-xs-6">
         <!-- small box -->
@@ -123,4 +129,18 @@
     <div class="col-lg-3 col-xs-6">
     </div>
 </div>
+{% endcomment %}
+<div class="row">
+    <div class="col-md-6">
+        {% bart_users %}
+    </div>
+</div>
 {% endblock content %}
+
+
+{% block js %}
+    <script src="{% static 'js/flot/jquery.flot.min.js' %}"></script>
+    <script src="{% static 'js/flot/jquery.flot.resize.min.js' %}"></script>
+    <script src="{% static 'js/flot/jquery.flot.pie.min.js' %}"></script>
+    <script src="{% static 'js/flot/jquery.flot.categories.min.js' %}"></script>
+{% endblock js %}
