@@ -9,6 +9,7 @@ class User(AbstractUser):
     image = models.ImageField(_('image'), blank=True, null=True)
     validated_email = models.BooleanField(_('validated email'), default=False)
 
+    @property
     def get_name(self):
         if self.first_name and self.last_name:
             return f'{self.first_name} {self.last_name}'
@@ -39,12 +40,6 @@ class Client(models.Model):
         ("2", "Iberian Trade Europe"),
         ("3", "Ambos"),
     )
-
-    AGENT_CHOICES = (
-        ("1", "Mario"),
-        ("2", "Pablo"),
-        ("3", "Miguel Angel"),
-    )
     INTEREST_CHOICES = (
         ("1", "Blue"),
         ("2", "Yellow"),
@@ -53,7 +48,16 @@ class Client(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
     business = models.CharField(_('business'), max_length=10, choices = BUSINESS_CHOICES, default="1")
-    agent = models.CharField(_('agent'), max_length=10, choices = get_agent_choice(), default="1")
+    agent = models.ForeignKey(
+        User,
+        related_name='clients',
+        verbose_name=_('agent'),
+        on_delete=models.CASCADE,
+        limit_choices_to={'is_staff': False, 'is_superuser': False},
+        to_field='username',
+        blank=True,
+        null=True
+    )
     name = models.CharField(_('company name'), max_length=200)
     address = models.CharField(_('address'), blank=True, null=True, max_length=200)
     zipcode = models.CharField(_('postal code'), blank=True, null=True, max_length=200)
@@ -71,6 +75,7 @@ class Client(models.Model):
         blank=True,
         null=True
     )
+
     #NEW_USER
     new_client =  models.BooleanField(_('new client'), default=False, help_text='if check is a new client')
 

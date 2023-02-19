@@ -1,5 +1,6 @@
 from django import template
 
+from django.db.models import Count
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import get_user_model
 from apps.backend.models import Client, Province
@@ -16,8 +17,7 @@ def bart_users():
 
     if users:
         for user in users:
-            users_clients = clients.filter(agent=user.pk).count()
-            data.append([f"{ user.username }", users_clients ])
+            data.append([f"{ user.get_name.title() }", user.clients.all().count()])
 
     context = {
         'id': 'bart_users',
@@ -58,12 +58,23 @@ def bart_clients():
     }
     return context
 
+@register.inclusion_tag('templatetags/statistics.html')
+def statistics():
+    clients = Client.objects.all()
+    new_clients_total = clients.filter(new_client=True).count()
+    users = User.objects.filter(is_staff=False, is_superuser=False).annotate(num_clients = Count('clients')).order_by('-num_clients').exclude(num_clients__lte=0)[0:3]
+    context = {
+        'new_clients_total':new_clients_total,
+        'users':users
+    }
+    return context
+
 
 @register.inclusion_tag('templatetags/map.html')
 def map():
-    provinces = Province.objects.all()
-
+    provinces = Province.objects.all().annotate(num_clients = Count('clients')).order_by('-num_clients').exclude(num_clients__lte=0)
     context = {
-        'provinces':provinces
+        'provinces':provinces,
+        'title': _('map of clients by provinces'),
     }
     return context
