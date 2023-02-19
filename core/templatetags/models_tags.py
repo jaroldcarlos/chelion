@@ -41,3 +41,19 @@ def bart_companies():
         'data':data
     }
     return context
+
+
+@register.inclusion_tag('templatetags/bart.html')
+def bart_clients():
+    data = []
+    clients = Client.objects.all()
+    new_clients = clients.filter(new_client=True).count()
+    data.append(['New Clients', new_clients ])
+    old_clients = clients.filter(new_client=False).count()
+    data.append(['Old Client', old_clients ])
+    context = {
+        'id': 'bart_clients',
+        'title': _('data by clients'),
+        'data':data
+    }
+    return context

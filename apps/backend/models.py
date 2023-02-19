@@ -58,7 +58,7 @@ class Client(models.Model):
     telephone = models.CharField(_('telephone'), max_length=20, blank=True, null=True)
 
     #NEW_USER
-    new_user =  models.BooleanField(_('new client'), default=False, help_text='if check is a new client')
+    new_client =  models.BooleanField(_('new client'), default=False, help_text='if check is a new client')
 
     #ACTIVITY
     a_installer =  models.BooleanField(_('installer'), default=False)
