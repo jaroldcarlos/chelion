@@ -1,7 +1,6 @@
 {% extends "./layout.html" %}
 
 {% load static %}
-{% load i18n %}
 {% load model_tags %}
 
 {% block content %}
@@ -134,13 +133,16 @@
     <div class="col-md-6">
         {% bart_users %}
     </div>
+    <div class="col-md-6">
+        {% bart_companies %}
+    </div>
 </div>
 {% endblock content %}
 
 
-{% block js %}
+{% block js_head %}
     <script src="{% static 'js/flot/jquery.flot.min.js' %}"></script>
     <script src="{% static 'js/flot/jquery.flot.resize.min.js' %}"></script>
     <script src="{% static 'js/flot/jquery.flot.pie.min.js' %}"></script>
     <script src="{% static 'js/flot/jquery.flot.categories.min.js' %}"></script>
-{% endblock js %}
+{% endblock js_head %}
