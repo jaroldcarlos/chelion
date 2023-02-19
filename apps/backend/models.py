@@ -26,6 +26,13 @@ def get_agent_choice():
             list_user.append((f'{user.pk}', f'{user.get_name()}'))
     return list_user
 
+class Province(models.Model):
+    name = models.CharField(_('name'), max_length=200)
+    geoposition = models.CharField(_('geoposition'), max_length=200)
+
+    def __str__(self):
+        return f'{self.name}'
+
 class Client(models.Model):
     BUSINESS_CHOICES = (
         ("1", "Chelion Iberia"),
@@ -56,7 +63,14 @@ class Client(models.Model):
     person_position = models.CharField(_('persons position'), max_length=200)
     email = models.EmailField(_('email'))
     telephone = models.CharField(_('telephone'), max_length=20, blank=True, null=True)
-
+    province = models.ForeignKey(
+        Province,
+        related_name='clients',
+        verbose_name=_('province'),
+        on_delete=models.CASCADE,
+        blank=True,
+        null=True
+    )
     #NEW_USER
     new_client =  models.BooleanField(_('new client'), default=False, help_text='if check is a new client')
 

@@ -28,6 +28,8 @@
                         {{ form.new_client|as_crispy_field }}
                     </div>
                     <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
                         {{ form.name|as_crispy_field }}
                     </div>
                     <div class="col-md-6">
@@ -35,6 +37,9 @@
                     </div>
                     <div class="col-md-6">
                         {{ form.address|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ form.province|as_crispy_field }}
                     </div>
                     <div class="col-md-6">
                         {{ form.zipcode|as_crispy_field }}
@@ -68,6 +73,7 @@
                     <div class="col-md-12">
                         {{ form.interest|as_crispy_field }}
                         {{ form.comment|as_crispy_field }}
+                        <input type="submit" value="{% trans 'save' %}" class="btn btn-success">
                         <a href="{% url 'backend:clients_list' %}" class="btn btn-default">{% trans "back to the list" %}</a>
                         <a href="{% url 'backend:clients_delete' object.pk %}" class="btn btn-danger" style="float:right">{% trans "delete" %}</a>
                     </div>

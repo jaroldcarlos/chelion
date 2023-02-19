@@ -2,7 +2,7 @@ from django import template
 
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import get_user_model
-from apps.backend.models import Client
+from apps.backend.models import Client, Province
 
 register = template.Library()
 
@@ -55,5 +55,15 @@ def bart_clients():
         'id': 'bart_clients',
         'title': _('data by clients'),
         'data':data
+    }
+    return context
+
+
+@register.inclusion_tag('templatetags/map.html')
+def map():
+    provinces = Province.objects.all()
+
+    context = {
+        'provinces':provinces
     }
     return context
