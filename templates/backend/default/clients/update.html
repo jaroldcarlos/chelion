@@ -80,7 +80,7 @@
                         <button type="submit" name="submit_continue" class="btn btn-secondary">{% trans "Save and continue editing"|upper %}</button>
                         <a href="{% url 'backend:clients_list' %}" class="btn btn-default button-mobile">{% trans "back to the list"|upper %}</a>
                         {% if request.user.is_staff or request.user.is_superuser %}
-                            <a href="{% url 'backend:clients_delete' object.pk %}" class="btn btn-danger" style="float:right">{% trans "delete" %}</a>
+                            <a href="{% url 'backend:clients_delete' object.pk %}" class="btn btn-danger button-mobile" style="float:right">{% trans "delete" %}</a>
                         {% endif %}
                     </div>
                 </div>

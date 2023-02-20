@@ -10,24 +10,22 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script>
-var xValues = [21, 22, 23];
+var xValues = [19, 20, 21, 22, 23];
 
 new Chart("myChart", {
   type: "line",
   data: {
     labels: xValues,
-    datasets: [{
-      data: [20, 30, 40],
-      borderColor: "red",
-      fill: false,
-      label: 'Chelion Iberia'
-    },
-    {
-      data: [50, 100, 23],
-      borderColor: "blue",
-      fill: false,
-      label: 'Iberian Trade Europe'
-    }]
+    datasets: [
+      {% for name, dates, color in data %}
+        {
+          data: [{{ dates }}],
+          borderColor: "{{ color }}",
+          fill: false,
+          label: '{{ name }}'
+        },
+      {% endfor %}
+    ]
   },
   options: {
     legend: {display: true}

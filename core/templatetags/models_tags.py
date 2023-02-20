@@ -1,5 +1,6 @@
 from django import template
 
+from datetime import datetime
 from django.db.models import Count
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import get_user_model
@@ -71,8 +72,47 @@ def statistics():
 
 @register.inclusion_tag('templatetags/line-chart.html')
 def line_chart():
+
+    data = []
+    clients = Client.objects.all()
+
+    fecha1 = datetime.strptime("2023-02-19", "%Y-%m-%d")
+    fecha1_count = clients.filter(business=1, created_on__gte=fecha1).count()
+
+    fecha2 = datetime.strptime("2023-02-20", "%Y-%m-%d")
+    fecha2_count = clients.filter(business=1, created_on__gte=fecha2).count()
+
+    fecha3 = datetime.strptime("2023-02-21", "%Y-%m-%d")
+    fecha3_count = clients.filter(business=1, created_on__gte=fecha3).count()
+
+    fecha4 = datetime.strptime("2023-02-22", "%Y-%m-%d")
+    fecha4_count = clients.filter(business=1, created_on__gte=fecha4).count()
+
+    fecha5 = datetime.strptime("2023-02-23", "%Y-%m-%d")
+    fecha5_count = clients.filter(business=1, created_on__gte=fecha5).count()
+
+    data.append(['Chelion Iberia', f'{fecha1_count}, {fecha2_count}, {fecha3_count}, {fecha4_count}, {fecha5_count}', 'red'])
+
+    fecha1 = datetime.strptime("2023-02-19", "%Y-%m-%d")
+    fecha1_count = clients.filter(business=2, created_on__gte=fecha1).count()
+
+    fecha2 = datetime.strptime("2023-02-20", "%Y-%m-%d")
+    fecha2_count = clients.filter(business=2, created_on__gte=fecha2).count()
+
+    fecha3 = datetime.strptime("2023-02-21", "%Y-%m-%d")
+    fecha3_count = clients.filter(business=2, created_on__gte=fecha3).count()
+
+    fecha4 = datetime.strptime("2023-02-22", "%Y-%m-%d")
+    fecha4_count = clients.filter(business=2, created_on__gte=fecha4).count()
+
+    fecha5 = datetime.strptime("2023-02-23", "%Y-%m-%d")
+    fecha5_count = clients.filter(business=2, created_on__gte=fecha5).count()
+
+    data.append(['Iberian Trade Europe', f'{fecha1_count}, {fecha2_count}, {fecha3_count}, {fecha4_count}, {fecha5_count}', 'blue'])
+
     context = {
         'title': _('clients per day (Business)'),
+        'data': data
     }
     return context
 
