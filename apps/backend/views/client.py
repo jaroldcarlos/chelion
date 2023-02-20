@@ -59,7 +59,7 @@ class Clients_Delete(DeleteView):
     template_name=f'backend/{theme_backend}/clients/delete.html'
     success_url=reverse_lazy("backend:clients_list")
 
-    @method_decorator(user_passes_test(lambda u: u.is_superuser))
+    @method_decorator(user_passes_test(lambda u: u.is_staff))
     def dispatch(self, *args, **kwargs):
         return super().dispatch(*args, **kwargs)
 
