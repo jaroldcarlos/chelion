@@ -57,7 +57,7 @@
     <script>
         $(document).ready( function () {
             $('#table_id').DataTable({
-                {% if clients.count <= 30 %}
+                {% if clients.count <= 11 %}
                     "searching":false,
                     "paging":false,
                 {% else %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ app_name }} | {% trans "log in"|title %}</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'backend/plugins/fontawesome-free/css/all.min.css' %}">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="{% static 'backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{% static 'backend/dist/css/adminlte.min.css' %}">
+    <style>
+        body.login-page {
+            background-image: url('{% static "/images/bg/bg6.jpg" %}');
+            background-size: cover;
+        }
+    </style>
+    {% block css %}
+    {% endblock css %}
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            {% comment %}
+                <a href="{% url 'frontend:home' %}"><img src="{% static 'images/logo/logo.png' %}" width="150" alt="{{ app_name }} Logo"></a>
+            {% endcomment %}
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">{% block title_page %}{% endblock title_page %}</p>
+                {% block content %}
+                {% endblock content %}
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    <script src="{% static 'backend/plugins/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'backend/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'backend/dist/js/adminlte.min.js' %}"></script>
+    {% block js %}{% endblock js %}
+</body>
+</html>
+

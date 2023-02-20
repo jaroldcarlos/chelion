@@ -41,8 +41,12 @@
                     <input type="checkbox" id="show_password" title="{% trans 'clic para mostrar contraseña' %}"/>
                     &nbsp;&nbsp;{% trans "show password"|title %}
                 </div>
+                <hr>
                 <div class="row">
                     <div class="col-8">
+                        <p class="mb-1">
+                            <a href="{% url 'password_reset' %}">{% trans "i forgot my password"|capfirst %}</a>
+                        </p>
                         {% comment %}
                         <div class="icheck-primary">
                             <input type="checkbox" id="remember">
@@ -70,9 +74,6 @@
                         </a>
                     </div>
                 <!-- /.social-auth-links -->
-                <p class="mb-1">
-                    <a href="{% url 'password_reset' %}">{% trans "i forgot my password"|capfirst %}</a>
-                </p>
                 <p class="mb-0">
                     <a href="{% url 'register' %}" class="text-center">{% trans "register a new membership"|capfirst %}</a>
                 </p>
