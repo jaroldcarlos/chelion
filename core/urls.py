@@ -14,6 +14,7 @@ admin.site.site_header = admin_title
 admin.site.index_title = admin_title
 admin.site.site_title = admin_title
 
+handler500 = 'apps.frontend.views.custom_error_view'
 handler404 = 'apps.frontend.views.custom_page_not_found_view'
 
 urlpatterns = [

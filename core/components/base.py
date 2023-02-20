@@ -24,7 +24,7 @@ else:
     ALLOWED_HOSTS = [SERVER_DOMAIN, ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://9522-91-117-232-228.eu.ngrok.io'
+    'https://siuu.es',
 ]
 
 INTERNAL_IPS = ['localhost']
