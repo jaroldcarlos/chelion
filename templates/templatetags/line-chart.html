@@ -4,13 +4,13 @@
         <h3 class="card-title">{{ title|upper }}</h3>
     </div>
     <div class="card-body">
-      <canvas id="myChart" style="height:300px">
+      <canvas id="myChart" style="height:300px!important">
     </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script>
-var xValues = [19, 20, 21, 22, 23];
+var xValues = ['19 feb', '20 feb', '21 feb', '22 feb', '23 feb'];
 
 new Chart("myChart", {
   type: "line",
@@ -28,7 +28,9 @@ new Chart("myChart", {
     ]
   },
   options: {
+    responsive: true,
     legend: {display: true}
   }
 });
+
 </script>
