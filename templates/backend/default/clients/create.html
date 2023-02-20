@@ -70,11 +70,11 @@
                         {{ form.i_panels|as_crispy_field }}
                         {{ form.i_others|as_crispy_field }}
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="section-buttons">
                         {{ form.interest|as_crispy_field }}
                         {{ form.comment|as_crispy_field }}
-                        <input type="submit" value="{% trans 'save' %}" class="btn btn-success">
-                        <a href="backend:clients_list" class="btn btn-default">{% trans "see list" %}</a>
+                        <input type="submit" value="{% trans 'save'|upper %}" class="btn btn-success button-mobile">
+                        <a href="backend:clients_list" class="btn btn-default button-mobile">{% trans "back to the list"|upper %}</a>
                     </div>
                 </div>
             </div>

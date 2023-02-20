@@ -69,6 +69,12 @@ def statistics():
     }
     return context
 
+@register.inclusion_tag('templatetags/line-chart.html')
+def line_chart():
+    context = {
+        'title': _('clients per day (Business)'),
+    }
+    return context
 
 @register.inclusion_tag('templatetags/map.html')
 def map():
@@ -80,3 +86,5 @@ def map():
         'title': _('map of clients by provinces'),
     }
     return context
+
+

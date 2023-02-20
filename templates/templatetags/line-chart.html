@@ -1,0 +1,36 @@
+<div class="card card-success">
+    <div class="card-header">
+        <i class="fa fa-bar-chart-o"></i>
+        <h3 class="card-title">{{ title|upper }}</h3>
+    </div>
+    <div class="card-body">
+      <canvas id="myChart" style="width:100%">
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+var xValues = [21, 22, 23];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      data: [20, 30, 40],
+      borderColor: "red",
+      fill: false,
+      label: 'Chelion Iberia'
+    },
+    {
+      data: [50, 100, 23],
+      borderColor: "blue",
+      fill: false,
+      label: 'Iberian Trade Europe'
+    }]
+  },
+  options: {
+    legend: {display: true}
+  }
+});
+</script>

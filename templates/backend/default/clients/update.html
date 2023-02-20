@@ -70,11 +70,15 @@
                         {{ form.i_panels|as_crispy_field }}
                         {{ form.i_others|as_crispy_field }}
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="section-buttons">
                         {{ form.interest|as_crispy_field }}
                         {{ form.comment|as_crispy_field }}
-                        <input type="submit" value="{% trans 'save' %}" class="btn btn-success">
-                        <a href="{% url 'backend:clients_list' %}" class="btn btn-default">{% trans "back to the list" %}</a>
+                        {% comment %}
+                            <input type="submit" value="{% trans 'save' %}" class="btn btn-success">
+                        {% endcomment %}
+                        <button type="submit" name="submit" class="btn btn-success">{% trans "save"|upper %}</button>
+                        <button type="submit" name="submit_continue" class="btn btn-secondary">{% trans "Save and continue editing"|upper %}</button>
+                        <a href="{% url 'backend:clients_list' %}" class="btn btn-default button-mobile">{% trans "back to the list"|upper %}</a>
                         {% if request.user.is_staff or request.user.is_superuser %}
                             <a href="{% url 'backend:clients_delete' object.pk %}" class="btn btn-danger" style="float:right">{% trans "delete" %}</a>
                         {% endif %}
@@ -84,3 +88,17 @@
         </div>
     </form>
 {% endblock content %}
+
+
+{% block js %}
+<script>
+    $(document).ready(function() {
+        $('form').submit(function(event) {
+            var button = $('form button[type="submit"]:focus');
+            if (button.attr('name') == 'submit_continue') {
+            this.action += '?continue_editing=1';
+            }
+        });
+    });
+</script>
+{% endblock js %}

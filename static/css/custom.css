@@ -1,0 +1,23 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #section-buttons button, #section-buttons .button-mobile{
+    width:100%;
+    margin:10px 0px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  #section-buttons button, #section-buttons .button-mobile{
+    width:100%;
+    margin:10px 0px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  #section-buttons button, #section-buttons .button-mobile{
+    width:100%;
+    margin:10px 0px;
+  }
+}

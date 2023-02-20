@@ -1,4 +1,4 @@
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import ListView, CreateView, DeleteView, UpdateView
 from django.contrib.auth.mixins import UserPassesTestMixin
@@ -81,4 +81,7 @@ class Clients_Update(UpdateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse('backend:clients_list')
+        if self.request.GET.get('continue_editing'):
+            return reverse_lazy('backend:clients_update', args=[self.object.pk])
+        else:
+            return reverse('backend:clients_list')
