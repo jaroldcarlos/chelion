@@ -15,6 +15,10 @@
 {% endblock navigator %}
 
 {% block content %}
+    {% if request.user.is_staff or request.user.is_superuser %}
+        <a href="{% url 'backend:clients_to_csv' %}" class="btn btn-info">{% trans "Export to CSV" %}</a>
+    <hr>
+    {% endif %}
     <table id="table_id" class="display">
         <thead>
             <tr>

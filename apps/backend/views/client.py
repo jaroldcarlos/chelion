@@ -1,3 +1,5 @@
+import csv
+from django.http import HttpResponse
 from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import ListView, CreateView, DeleteView, UpdateView
@@ -85,3 +87,22 @@ class Clients_Update(UpdateView):
             return reverse_lazy('backend:clients_update', args=[self.object.pk])
         else:
             return reverse('backend:clients_list')
+
+@user_passes_test(lambda u: u.is_staff)
+def clients_to_csv(request):
+    queryset = Client.objects.all()
+    filename = "clients.csv"
+
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = f'attachment; filename="{filename}"'
+    writer = csv.writer(response)
+
+    fields = Client.get_fields()
+
+    writer.writerow(fields)
+
+    for obj in queryset:
+        row = [getattr(obj, field) for field in fields]
+        writer.writerow(row)
+
+    return response

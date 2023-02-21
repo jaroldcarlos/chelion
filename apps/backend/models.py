@@ -102,6 +102,9 @@ class Client(models.Model):
     def __str__(self):
         return f'{self.name}'
 
+    def get_fields():
+        return [field.name for field in Client._meta.fields]
+
 
 class FilesPDF(models.Model):
     name = models.CharField(_('name'), max_length=200)
