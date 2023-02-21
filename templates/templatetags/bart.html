@@ -24,6 +24,10 @@
                 tickColor: "#f3f3f3"
             },
             series: {
+                labels:{
+                    show: true,
+                    position: "end",
+                },
                 bars: {
                     show: true,
                     barWidth: 0.5,
@@ -32,10 +36,9 @@
             },
             xaxis: {
                 mode: "categories",
-                tickLength: 0
+                tickLength: 0,
             },
             yaxis: {
-                tickSize:1,
                 autoScale: "exact",
             }
         });

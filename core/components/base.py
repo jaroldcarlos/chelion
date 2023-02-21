@@ -19,12 +19,12 @@ if not DEBUG:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if DEBUG:
-    ALLOWED_HOSTS = ['*', 'https://3f90-91-117-232-228.eu.ngrok.io']
+    ALLOWED_HOSTS = ['*',]
 else:
-    ALLOWED_HOSTS = [SERVER_DOMAIN, ]
+    ALLOWED_HOSTS = [SERVER_DOMAIN, 'www.siuu.es' ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://siuu.es',
+    'https://siuu.es', "https://www.siuu.es"
 ]
 
 INTERNAL_IPS = ['localhost']

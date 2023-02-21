@@ -63,10 +63,10 @@ def bart_clients():
 @register.inclusion_tag('templatetags/statistics.html')
 def statistics():
     clients = Client.objects.all()
-    new_clients_total = clients.filter(new_client=True).count()
+    clients_total = clients.count()
     users = User.objects.filter(is_staff=False, is_superuser=False).annotate(num_clients = Count('clients')).order_by('-num_clients').exclude(num_clients__lte=0)[0:3]
     context = {
-        'new_clients_total':new_clients_total,
+        'clients_total':clients_total,
         'users':users
     }
     return context
