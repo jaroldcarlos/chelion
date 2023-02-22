@@ -1,4 +1,5 @@
 import csv
+from django.conf import settings
 from django.http import HttpResponse
 from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
@@ -9,12 +10,15 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from dynamic_preferences.registries import global_preferences_registry
 from ..models import Client
+from ..forms import ClientForm
 
-global_preferences = global_preferences_registry.manager()
-theme_backend = global_preferences['app__app_theme_backend']
-
+if 'dynamic_preferences' in settings.INSTALLED_APPS:
+    from dynamic_preferences.registries import global_preferences_registry
+    global_preferences = global_preferences_registry.manager()
+    theme_backend = global_preferences['app__app_theme_backend']
+else:
+    theme_backend = 'default'
 
 class Clients_List(ListView):
     queryset = Client.objects.all()
@@ -34,8 +38,8 @@ class Clients_List(ListView):
 
 class Clients_Create(CreateView):
     model = Client
+    form_class  = ClientForm
     template_name = f'backend/{theme_backend}/clients/create.html'
-    fields = '__all__'
 
     def get_initial(self):
         initial = super(Clients_Create, self).get_initial()
@@ -67,8 +71,8 @@ class Clients_Delete(DeleteView):
 
 class Clients_Update(UpdateView):
     model = Client
+    form_class  = ClientForm
     template_name = f'backend/{theme_backend}/clients/update.html'
-    fields = '__all__'
 
     def test_func(self):
         if not self.request.user.is_staff and not self.request.user.is_superuser:

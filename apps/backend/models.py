@@ -1,8 +1,7 @@
 from django.db import models
+from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import AbstractUser
-
-
 
 
 class User(AbstractUser):
@@ -45,7 +44,7 @@ class Client(models.Model):
         ("2", "Yellow"),
         ("3", "Red"),
     )
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(_('date of entry'))
     modified_date = models.DateTimeField(auto_now=True)
     business = models.CharField(_('business'), max_length=10, choices = BUSINESS_CHOICES, default="1")
     agent = models.ForeignKey(

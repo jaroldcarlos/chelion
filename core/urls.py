@@ -5,11 +5,13 @@ from django.contrib import admin
 
 from apps.backend.views import register
 
-from dynamic_preferences.registries import global_preferences_registry
+if 'dynamic_preferences' in settings.INSTALLED_APPS:
+    from dynamic_preferences.registries import global_preferences_registry
+    global_preferences = global_preferences_registry.manager()
+    admin_title = global_preferences['app__app_name']
+else:
+    admin_title = 'defaul'
 
-global_preferences = global_preferences_registry.manager()
-
-admin_title = global_preferences['app__app_name']
 admin.site.site_header = admin_title
 admin.site.index_title = admin_title
 admin.site.site_title = admin_title

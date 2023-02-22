@@ -13,14 +13,16 @@ from django.utils.encoding import force_str
 from core.email import UserRegisterEmail, VerificationEmail
 from core.tokens import account_activation_token
 from django.utils.translation import gettext as _
-from dynamic_preferences.registries import global_preferences_registry
 from core.decorators import check_recaptcha
 
+if 'dynamic_preferences' in settings.INSTALLED_APPS:
+    from dynamic_preferences.registries import global_preferences_registry
+    global_preferences = global_preferences_registry.manager()
+    theme_backend = global_preferences['app__app_theme_backend']
+else:
+    theme_backend = 'default'
 
 User=get_user_model()
-
-global_preferences = global_preferences_registry.manager()
-theme_backend = global_preferences['app__app_theme_backend']
 
 
 class home(TemplateView):
@@ -40,11 +42,11 @@ def register(request):
             context = {
                 'request':request
             }
-            if global_preferences['app__verification_email']:
-                VerificationEmail(context, user).send()
-                messages.success(request, _('verification email has been sent'))
-            else:
-                UserRegisterEmail(context, user).send()
+            #if global_preferences['app__verification_email']:
+            #    VerificationEmail(context, user).send()
+            #    messages.success(request, _('verification email has been sent'))
+            #else:
+            UserRegisterEmail(context, user).send()
             login(request, user)
             messages.success(request, _('registration successful'))
             return redirect("frontend:home")

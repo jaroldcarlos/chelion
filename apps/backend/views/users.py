@@ -1,4 +1,4 @@
-
+from django.conf import settings
 from django.urls import reverse
 from django.contrib.auth import get_user_model
 from django.utils.decorators import method_decorator
@@ -12,11 +12,14 @@ from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from ..forms import SignupForm
 
-from dynamic_preferences.registries import global_preferences_registry
-
 User=get_user_model()
-global_preferences = global_preferences_registry.manager()
-theme_backend = global_preferences['app__app_theme_backend']
+
+if 'dynamic_preferences' in settings.INSTALLED_APPS:
+    from dynamic_preferences.registries import global_preferences_registry
+    global_preferences = global_preferences_registry.manager()
+    theme_backend = global_preferences['app__app_theme_backend']
+else:
+    theme_backend = 'default'
 
 class Users_List(ListView):
     queryset = User.objects.filter(is_superuser=False)

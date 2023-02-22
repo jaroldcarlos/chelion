@@ -15,6 +15,14 @@ class ClientForm(forms.ModelForm):
         model = Client
         fields = "__all__"
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['created_on'].widget = forms.widgets.DateInput(
+            attrs={
+                'type': 'date', 'placeholder': 'dd-mm-aaaa',
+                'class': 'form-control'
+                }
+            )
 class SignupForm(forms.ModelForm):
     class Meta:
         model = User
