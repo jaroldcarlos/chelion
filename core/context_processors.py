@@ -20,7 +20,7 @@ def custom_context(request):
         mobile = False
     database_name = db.utils.settings.DATABASES['default']['NAME']
 
-    if 'global_preferences' in settings.INSTALLED_APPS:
+    if 'dynamic_preferences' in settings.INSTALLED_APPS:
         app_name = global_preferences['app__app_name'],
         theme_backend = global_preferences['app__app_theme_backend']
     else:

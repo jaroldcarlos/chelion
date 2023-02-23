@@ -46,7 +46,7 @@ DJANGO_APPS = [
     'django.contrib.staticfiles'
 ]
 THIRDPARTY_APPS = [
-    #'dynamic_preferences',
+    'dynamic_preferences',
     'crispy_forms',
 ]
 LOCAL_APPS = [
