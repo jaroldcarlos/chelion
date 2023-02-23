@@ -1,4 +1,6 @@
 import csv
+
+from django.utils import timezone
 from django.conf import settings
 from django.http import HttpResponse
 from django.urls import reverse, reverse_lazy
@@ -45,6 +47,7 @@ class Clients_Create(CreateView):
         initial = super(Clients_Create, self).get_initial()
         if not self.request.user.is_staff and not self.request.user.is_superuser:
             initial['agent'] = self.request.user
+        initial['created_on'] = timezone.now().date()
         return initial
 
     def form_valid(self, form):
