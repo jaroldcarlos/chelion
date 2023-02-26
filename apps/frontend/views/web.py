@@ -7,8 +7,12 @@ class Home(RedirectView):
     query_string = True
     pattern_name = 'backend:home'
 
-class ViewPage(TemplateView):
+def viewpage(request, name=None):
     template_name = "view.html"
+    context = {
+        'name':name
+    }
+    return render(request, template_name, context)
 
 def custom_page_not_found_view(request, exception=None):
     return render (request, '404.html', {})
