@@ -21,7 +21,7 @@ def custom_context(request):
     database_name = db.utils.settings.DATABASES['default']['NAME']
 
     if 'dynamic_preferences' in settings.INSTALLED_APPS:
-        app_name = global_preferences['app__app_name'],
+        app_name = global_preferences['app__app_name']
         theme_backend = global_preferences['app__app_theme_backend']
     else:
         app_name = 'default'

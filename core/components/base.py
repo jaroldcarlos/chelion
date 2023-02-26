@@ -21,10 +21,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 if DEBUG:
     ALLOWED_HOSTS = ['*',]
 else:
-    ALLOWED_HOSTS = [SERVER_DOMAIN, 'www.siuu.es' ]
+    ALLOWED_HOSTS = [SERVER_DOMAIN, 'www.siuu.es', 'fodinte.eu', 'www.fodinte.eu' ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://siuu.es', "https://www.siuu.es"
+    'https://siuu.es', "https://www.siuu.es",
+    'https://fodinte.eu', "https://www.fodinte.eu",
 ]
 
 INTERNAL_IPS = ['localhost']
