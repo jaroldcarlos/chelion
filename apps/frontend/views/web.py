@@ -1,11 +1,14 @@
 from django.shortcuts import render
-from django.views.generic.base import RedirectView
+from django.views.generic.base import RedirectView, TemplateView
 
 
 class Home(RedirectView):
     permanent = False
     query_string = True
     pattern_name = 'backend:home'
+
+class ViewPage(TemplateView):
+    template_name = "view.html"
 
 def custom_page_not_found_view(request, exception=None):
     return render (request, '404.html', {})
