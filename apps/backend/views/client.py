@@ -1,4 +1,5 @@
 import csv
+import copy
 
 from django.utils import timezone
 from django.conf import settings
@@ -113,3 +114,125 @@ def clients_to_csv(request):
         writer.writerow(row)
 
     return response
+
+
+@user_passes_test(lambda u: u.is_staff)
+def client_to_csv_export(request):
+    queryset = Client.objects.all()
+    filename = "export_new_clients.csv"
+    client_list = []
+    BASE_CLIENT = {
+        'POSALIAS':'',
+        'CODPOS':'',
+        'PROVIFISCAL':'',
+        'RUTA':'',
+        'ZONA':'',
+        'CODMUNICIPIO':'',
+        'CODMUNICIPIOFISCAL':'',
+        'CODPAIS':'',
+        'DTOPOS':'',
+        'DTOFISCAL':'',
+        'CODPROVI':'',
+        'CODREP':'',
+        'COMENTARIO':'',
+        'DIRPOS':'',
+        'DIRPOS1':'',
+        'DIRPOS2':'',
+        'DIRFISCAL':'',
+        'E_MAIL':'',
+        'EMAILFISCAL':'',
+        'E_MAIL_PUBLI':'',
+        'ENVIARDOC':'',
+        'ESCALERA':'',
+        'ESCALERAFISCAL':'',
+        'EXTENSIONFISCAL':'',
+        'FAXPOS':'',
+        'FAXFISCAL':'',
+        'FECALTA_ORG':'',
+        'FECALTA':'',
+        'AP_ID':'',
+        'IDORG':'',
+        'LINKEDIN':'',
+        'SKYPE':'',
+        'TWITTER':'',
+        'MODIFICADO':'',
+        'MOTIVOBLOQUEO':'',
+        'MOTIVOBLOQUEO_ORG':'',
+        'MUNICIPIO':'',
+        'MUNICIPIOFISCAL':'',
+        'NIFPOS':'',
+        'ORDENRUTA':'',
+        'NVIA':'',
+        'RAZON':'',
+        'NVIAFISCAL':'',
+        'OBSERVACIONES':'',
+        'OBSPOS':'',
+        'OBSOLETO':'',
+        'NOMPOS':'',
+        'PAGINAWEB':'',
+        'PAISFISCAL':'',
+        'PISO':'',
+        'PISOFISCAL':'',
+        'POBPOS':'',
+        'POBFISCAL':'',
+        'PUERTA':'',
+        'PUERTAFISCAL':'',
+        'NOMFISCAL':'',
+        'REFERENCIA':'',
+        'TELPOS':'',
+        'TELPOS2':'',
+        'TELEFONOFISCAL':'',
+        'TELEFONO2FISCAL':'',
+        'TIPODOCNIF':'',
+        'TIPOIMAGEN':'',
+        'TIPONUMERO':'',
+        'TIPONUMEROFISCAL':'',
+        'ULTFECMOD':'',
+        'VIA':'',
+        'VIAFISCAL':'',
+        'VIAPUBLICAFISCAL':''
+    }
+    for client in queryset:
+        new_client = copy.deepcopy(BASE_CLIENT)
+        new_client['FECALTA_ORG'] = client.created_on.strftime("%d/%m/%Y")
+        new_client['FECALTA'] = client.created_on.strftime("%d/%m/%Y")
+        if client.name:
+            new_client['POSALIAS'] = client.name
+            new_client['RAZON'] = client.name
+            new_client['NOMPOS'] = client.name
+        if client.province:
+            new_client['POBPOS'] = 'ES'
+            new_client['POBPOS'] = client.province.name
+        if client.zipcode:
+            new_client['DTOPOS'] = client.zipcode
+            new_client['DTOFISCAL'] = client.zipcode
+        if client.email:
+            new_client['E_MAIL'] = client.email
+        if client.comment:
+            new_client['OBSERVACIONES'] = client.comment
+        if client.web:
+            new_client['PAGINAWEB'] = client.web
+        if client.telephone:
+            new_client['TELPOS2'] = client.telephone
+        if client.address:
+            new_client['VIAFISCAL'] = client.address
+            new_client['DIRPOS'] = client.address
+        client_list.append(new_client)
+
+
+
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = f'attachment; filename="{filename}"'
+    writer = csv.DictWriter(
+        response,
+        fieldnames=BASE_CLIENT.keys(),
+        delimiter=';',
+        quotechar='"',
+        quoting=csv.QUOTE_MINIMAL
+    )
+    writer.writeheader()
+    for row in client_list:
+        writer.writerow(row)
+
+    return response
+
